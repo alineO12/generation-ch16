@@ -26,7 +26,6 @@ console.log(invertido);
 
 // Incrementos y decrementos
 
-
 //SUMA
 
 let edad = 29;

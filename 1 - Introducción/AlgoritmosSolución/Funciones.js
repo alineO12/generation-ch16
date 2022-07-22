@@ -1,6 +1,7 @@
 //alert("Funciones");
 
-//Para crear una función:(Estructura):
+//Tema: Funciones
+//Para crear una función debemos seguir la siguiente estructura:
 
 /*function sumar (numero1, numero2) {
     console.log("Voy a sumar");
@@ -9,7 +10,7 @@
 
  sumar(4,5);*/
 
-//Ejercicio 2 utilizando funciones
+//Ejercicio 2: utilizando funciones
 
 function calculadoraSueldo (sueldoIngresado, diasTrabajados) {
 

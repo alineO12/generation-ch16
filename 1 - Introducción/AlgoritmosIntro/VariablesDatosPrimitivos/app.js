@@ -1,4 +1,5 @@
-//alert("Hola Mundo 2"); comentario de una solaa linea
+//alert("Hola Mundo 2"); comentario de una sola línea
+
 /*
 
 
@@ -9,7 +10,9 @@ bloque
 
 */
 
-//variables
+//Tema: Variables
+//Las variables contienen un valor y un nombre, así podemos acceder a ese dato
+//siempre que necesitemos
 
 let miVariable = "Aline";
 console.log(miVariable);
@@ -20,30 +23,32 @@ console.log(miVariable);
 const apellido = "Ortiz";
 console.log(apellido);
 
-//Datos primitivos que maneja JS
+//Tipos de datos primitivos que maneja JS:
+//"String" (va entrecomillas); Number; True False; Null; Undefined
 
 //-String (Dato primitivo JS)
+//Repesenta texto corto
 
 let variableCadena = "texto mas texto";
 console.log(variableCadena);
 
-//-Number - Numero (Dato primitivo JS)
+//-Number - Número (Dato primitivo JS)
 // 12345
 
 let variableNumber = 3456;
 variableNumber = variableNumber + 5;
 console.log(variableNumber);
 
-//concatenación
+//Concatenación:
 //unir dos cadenas de texto
-//unir un texto con numero
+//unir un texto con número
 //si quiero sumar debo quitar comillas
 
 let a = "1";
 let b = "1";
 console.log(a + b);
 
-//Boolean -  booleano (Dato primitivo JS)
+//-Boolean - booleano (Dato primitivo JS)
 //Es un dato lógico
 //Tiene dos valores true false
 
@@ -52,14 +57,16 @@ let verdadero = true;
 let falso = false;
 console.log(verdadero, falso);
 
-//null - nulo, un valor vacío (Dato primitivo JS)
+//-Null - nulo (Dato primitivo JS)
+//Es un valor vacío
 
 let varNull = null;
 /* console.log(varNull + 1);*/
 
-//undefined - indefined ausencia completa de valor
-//variable declaradapero sin asignación de
-//valor, esa variable es undefined
+//-Undefined - indefinido 
+//Ausencia completa de valor
+//Variable declarada pero sin asignación de...
+//Valor, esa variable es undefined
 
 let variable;
 console.log(variable + 1);
@@ -78,9 +85,11 @@ console.log(typeof(123));
 
 console.log(typeof null);
 
+
+
 let nombre = "Pedro";
 console.log("Mi nombre es:", nombre);
-console.log("Mi nombre es:" + nombre);6
+console.log("Mi nombre es:" + nombre);
 
 
 

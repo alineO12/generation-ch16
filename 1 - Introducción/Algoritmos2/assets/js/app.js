@@ -4,12 +4,18 @@
 
 //saludar ();
 
-//Arreglos; la primera opción es la más utilizada
+
+
+//Tema: Arreglos
+
+
+
+//Estructura de un arreglo:
 
 let num = [];
 console.log(num);
 
-//Otra manera de hacer un arreglo
+//Otra manera de hacer un arreglo (ya casi no se usa):
 
 //let arr1 = new Array();
 //console.log(arr1);
@@ -25,45 +31,42 @@ arr[6] = 8;
 arr[10] = 40;
 console.log(arr);
 
-//Un array tiene propiedades y métodos:
-//Propiedaddes de los arreglos
+//Un array tiene propiedades y métodos
+//Propiedaddes de los arreglos:
 //-Son descripciones de los objetos
 
 console.log(arr.length); //Ejemplo: descripción de un objeto: "length"
 
-//También, tenemos métodos
-//-Acciones en los arreglos, lo que podemos hacer
-//-Página mozilla te muestra cómo utilizar los métodos
+//Métodos de los arreglos:
+//-Son acciones en los arreglos, lo que podemos hacer
+//-Página mozilla te muestra cómo utilizar los métodos:
+//-https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array
+
 //Utilizando método "push"
-//Push () permite agregar un valor al final del arreglo
+//Qué hace: permite agregar un valor al final del arreglo
 
 const frutas = ["Manzana", "Plátano"];
 console.log(frutas);
-
 frutas.push("Naranja");
-
 console.log(frutas);
 
-//También, tenemos otro método pop () elimina el último
-//elemento de un array y lo devuelve.
-//¿Qué significar devolver)
-
-//Usando pop()
+//Utilizando método "pop" 
+//Qué hace: elimina el último elemento de un array y lo devuelve
+//¿Qué significar devolver?
 
 let elementoBorrado = frutas.pop(); //Devolver
-
 frutas.pop();
 console.log(frutas);
 console.log(elementoBorrado); //Devolver 
 
-//unshift ()
+//Utilizando método "unshift" ()
 //Qué hace: agrega un elemento al inicio del arreglo y lo devuelve
 
 let devolver = frutas.unshift("Uva", "Pera", "Sandía");
 console.log(frutas);
 console.log(devolver);
 
-//shift ()
+//Utilizando método shift ()
 //Qué hace: elimina un elemento del inicio del array
 
 let frutaQuitada = frutas.shift(); //devolver, quitar
@@ -71,45 +74,27 @@ console.log(frutas);
 console.log(frutaQuitada); //devolver
 
 
-//splice () elimina elementos existentes y/o agregando elementos
-//Vamos a hacer el ejercicio
+//Utilizando método splice () 
+//Qué hace: elimina elementos existentes y/o agregando elementos
 
+//Ejercicio: practicar métodos en un array (el archivo se encuentra aparte)
 
-
-const personas = ["Maria", "Dani", "Luis", "Juan", "Camila"];
-
-//personas.splice(1, 1, "Beto"); //notación en corchete, es parecida
-personas.splice(1, 1,);
-console.log(personas);
-
-personas.splice(2, 1);
-console.log(personas);
-
-personas.unshift(personas.splice(1,1)[0]);
-console.log(personas);
-
-//IndexOf
-
-console.log(personas.indexOf("Maria"));
-console.log(personas.indexOf("Aline")); */
-
-//arrglo multidimensional
+//Arreglo multidimensional
 
 const newArr = [1, 45, "Hola", "Adiós", true, null, [
     30, 31, 32], [ "Azul", "Amarillo", "Verde"]]; //podemos agregar strings, booleanos, null, undefined
-//y también podemos arreglo un arreglo dentro de un arreglo
+//y también podemos agregar un un arreglo dentro de un arreglo
 
 console.log(newArr);
 console.log(newArr[6][1]);
 console.log(newArr[7][1]);
+
 
 //Objetos
 //Estructura especial llamada objeto
 //nos permiten guardar pares de valores
 // key - value
 //llave - valor
-
-
 
 const obj = { 
               nombre : "Pedro",

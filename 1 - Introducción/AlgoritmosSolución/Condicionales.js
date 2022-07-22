@@ -1,18 +1,20 @@
 //alert("HolaMundo");
 
-//control de flujo
-
 
 /* let nombre = "Aline Ortiz"
 let edad = 20; */
 
-//Recibir datos de usuario
+//¿Cómo recibo datos de usuario? 
+//Usa la siguiente función:
 
-let nombre = prompt("Escribre tu nombre");
+let nombre = prompt("Escribe tu nombre");
 console.log(nombre);
 
 
-// casteo - convertir un dato
+//Casteo  
+//Qué es: convertir un dato a números enteros
+//Cuál es la función: parseInt
+
 let edad = parseInt(prompt("Escribe tu edad"));
 console.log(typeof edad);
 

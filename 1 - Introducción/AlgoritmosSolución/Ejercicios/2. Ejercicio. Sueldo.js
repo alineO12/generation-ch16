@@ -1,4 +1,10 @@
-/*Calcular sueldo de empleado por semana y por mes 
+/*Para agilizar los procesos de una empresa se necesita desarollar
+un algoritmo que permita calcular el sueldo de un emplead@ por 
+semana y por mes. Como dato tenemos su sueldo diario ($600) y
+como salida se debe imprimir el nombre y el dinero que recibirá por
+semana y por mes.
+
+Calcular sueldo de empleado por semana y por mes 
 con funciones*/
 
 function calculadoraSueldo() {
