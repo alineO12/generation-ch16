@@ -1,0 +1,57 @@
+.cuadro-padre{
+  background-color: rgb(9, 168, 117);
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.cuadro {
+    height: 20px;
+    width: 20px;
+    padding: 50px 40px 30px 20px;
+    margin: 20px 40px;
+    border: 10px solid yellowgreen;
+    border-radius: 100px 20px 30px 40px;
+  }
+
+  .el-1 {
+    background-color: #33a0cb;
+    align-self: flex-start;
+    flex-grow: 2; 
+  }
+
+  .el-2 {
+    background-color: #854197;
+    flex-grow: 3; 
+  }
+
+  .el-3 {
+    background-color: #e9c46a;
+    align-self: flex-end;
+    flex-grow: 1;
+    
+  }
+
+  .el-4 {
+    background-color: #c4af39;
+    flex-grow: 1;}
+
+    /* Introduccción a Bootstrap*/
+
+    .contenedor {
+      height: 100px;
+      background-color: #e9c46a;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .fila {
+      display: flex;
+    }
+
+    .columna{
+      flex-grow: 1;
+    }
+  
