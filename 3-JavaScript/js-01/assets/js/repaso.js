@@ -1,8 +1,8 @@
 /* Hoy estamos en la semana 5. Segundo día.
-Repaso de JV. Aprenderemos tipos de datos primitivos y tipos de variables.*/
+Repaso de JV. Repasaremos los tipos de datos primitivos y los tipos de variables.*/
 
 'use strict'
-//Javascript de forma estricta
+//Etiqueta para uso de Javascript de forma estricta
 
 /*Estos son los tipos de variables: */
 
