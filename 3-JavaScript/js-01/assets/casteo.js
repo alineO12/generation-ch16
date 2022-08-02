@@ -1,9 +1,7 @@
 'use strict';
 
 /* Conversión de tipos en JavaScript:
-
 Casteo o parseo
-
 */
 
 //Coersión de tipo de datos: convertir cadena de texto o datos booleanos (true que sería 1; false, 0) a número

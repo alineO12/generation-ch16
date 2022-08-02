@@ -70,8 +70,3 @@ console.log(`Mi nombre es ${persona.nombre}`); /*Usando la plantilla literal */
 console.log (`Mi hobbie favorito es ${persona.hobbies[1]}`); 
 console.log(`La marca de mi carro es ${persona.auto.marca}`); 
 console.log(`La acción que realizo es ${persona.saludar()}`); 
-
-
-
-
-
