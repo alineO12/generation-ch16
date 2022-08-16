@@ -1,0 +1,28 @@
+From 9df629c10f6f3a2f6f4dba1908dca0ecc3953730 Mon Sep 17 00:00:00 2001
+From: Alineo <alina.ortiz93@gmail.com>
+Date: Mon, 15 Aug 2022 17:56:34 -0500
+Subject: [PATCH 2/2] =?UTF-8?q?Introducci=C3=B3n=20orientada=20a=20objetos?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ 3-JavaScript/js-08/index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/3-JavaScript/js-08/index.html b/3-JavaScript/js-08/index.html
+index fbfcfdd..e383b94 100644
+--- a/3-JavaScript/js-08/index.html
++++ b/3-JavaScript/js-08/index.html
+@@ -4,7 +4,7 @@
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Tipo</title>
++    <title>OrientaciónAObjetos</title>
+ </head>
+ <body>
+     
+-- 
+2.37.1.windows.1
+

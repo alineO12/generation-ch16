@@ -1,0 +1,215 @@
+From d8dfb75aca89841eae2f49f9223429f0c161ca7c Mon Sep 17 00:00:00 2001
+From: Alineo <alina.ortiz93@gmail.com>
+Date: Mon, 15 Aug 2022 17:52:23 -0500
+Subject: [PATCH 1/2] =?UTF-8?q?Introducci=C3=B3n=20a=20la=20programaci?=
+ =?UTF-8?q?=C3=B3n=20orientada=20a=20objetos?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ 3-JavaScript/js-08/assets/js/01-objetos.js | 61 ++++++++++++++++++++++
+ 3-JavaScript/js-08/assets/js/clases.js     | 50 ++++++++++++++++++
+ 3-JavaScript/js-08/assets/js/tipo.js       | 41 +++++++++++++++
+ 3-JavaScript/js-08/index.html              | 15 ++++++
+ 4 files changed, 167 insertions(+)
+ create mode 100644 3-JavaScript/js-08/assets/js/01-objetos.js
+ create mode 100644 3-JavaScript/js-08/assets/js/clases.js
+ create mode 100644 3-JavaScript/js-08/assets/js/tipo.js
+ create mode 100644 3-JavaScript/js-08/index.html
+
+diff --git a/3-JavaScript/js-08/assets/js/01-objetos.js b/3-JavaScript/js-08/assets/js/01-objetos.js
+new file mode 100644
+index 0000000..deb9411
+--- /dev/null
++++ b/3-JavaScript/js-08/assets/js/01-objetos.js
+@@ -0,0 +1,61 @@
++let x = 10;
++/* console.log(x.length); */
++
++/* let obj_persona = {
++    nombre: 'Juan',
++    apellido: 'Ortiz',
++    correo: 'juan@gmail.com',
++    edad: 35
++}
++
++
++console.log(obj_persona);
++
++let personas = new Object ()
++personas.nombre = "David";
++personas.apellido = "Molina"
++personas.edad = 30;
++personas.correo = "ii@gmail.com"
++
++console.log(personas.nombre);
++console.log(personas.apellido);
++console.log(personas.edad);
++console.log(personas.correo); */
++
++let persona = {
++    nombre: "Michael",
++    apellido: "Fernández",
++    edad: 33,
++    correo: "al@gmail.com",
++    /* nombreCompleto: function() {
++        return this.nombre + ' ' + this.apellido;
++    } */
++//con get accedemos a atributos
++    idioma: 'es',
++    get leng() {
++        return this.idioma.toUpperCase();
++    },
++    set lang (lang) {
++        return this.idioma = lang.toLowerCase();
++    }
++}
++console.log(persona.leng);
++persona.lang = 'ES';
++console.log(persona.leng);
++console.log(persona.idioma);
++
++
++persona.tel = '5523234323';
++
++/* console.log(persona);
++console.log(persona.nombre);
++console.log(persona.nombreCompleto()); */
++
++// for in (recorrer atributos)
++
++for (varPropiedad in persona) {
++   /*  console.log(persona[varPropiedad]); */
++}
++
++let personasString = JSON.stringify(persona);
++/* console.log(personasString); */
+diff --git a/3-JavaScript/js-08/assets/js/clases.js b/3-JavaScript/js-08/assets/js/clases.js
+new file mode 100644
+index 0000000..b078e4b
+--- /dev/null
++++ b/3-JavaScript/js-08/assets/js/clases.js
+@@ -0,0 +1,50 @@
++//poo
++
++class Persona{ 
++    
++    constructor (nombre, apellido, edad) {
++        this.nombre = nombre;
++        this.apellido = apellido;
++        this.edad = edad;
++    }
++    get nombre() {
++        return this.nombre = nombre;
++    }
++    set nombre(nombre) {
++        this.nombre = nombre;
++    }
++}
++
++let persona1 = new Persona('José', 'Perez', 33);
++console.log(persona1);
++
++let persona2 = new Persona ('Mario', 'Ortega', 32);
++console.log(persona2);
++
++class Persona {
++    constructor(nombre, apellido){
++        this._nombre = nombre;
++        this._apellido = apellido;
++    }
++
++    get nombre(){
++        return this._nombre;
++    }
++
++    set nombre(nombre){
++        this._nombre = nombre
++    }
++}
++
++/* let persona1 = new Persona('David','Castellanos');
++
++console.log(persona1);
++
++persona1.nombre = 'David Guzman'
++
++console.log(persona1.nombre);
++
++let persona2 = new Persona ('Arturo', 'Guzman');
++console.log(persona2); */
++
++
+diff --git a/3-JavaScript/js-08/assets/js/tipo.js b/3-JavaScript/js-08/assets/js/tipo.js
+new file mode 100644
+index 0000000..b26f3d3
+--- /dev/null
++++ b/3-JavaScript/js-08/assets/js/tipo.js
+@@ -0,0 +1,41 @@
++//tipo predefinido
++let tiempo = new Date();
++console.log(tiempo);
++console.log(Math);
++
++let obj_literal = {
++    nombre: 'Juan',
++    edad: 35
++}
++
++let obj_constructor = new Object();
++obj_constructor.nombre = 'Dora';
++obj_constructor.edad = 23;
++console.log(obj_literal);
++console.log(obj_constructor);
++
++obj_literal['nombr'];
++let llave = 'nombr';
++console.log('esto es con llave' + obj_literal [llave]);
++
++console.log(obj_literal);
++console.log();
++
++//tipo cadena
++let cadena = 'Esto es una cadena';
++let cadena_Obj = new String ('Esto es otra cadena obj');
++
++console.log(cadena);
++console.log(cadena.Obj);
++
++//tipo numerico
++let numero = 13;
++let numero_Obj = new Number (13,13);
++console.log(numero);
++console.log(numero_Obj);
++
++let lista = ['1', '3', '5', '7'];
++let lista_obj = new Array ('1','4','6','8','9');
++console.log(lista);
++console.log(lista_obj);
++
+diff --git a/3-JavaScript/js-08/index.html b/3-JavaScript/js-08/index.html
+new file mode 100644
+index 0000000..fbfcfdd
+--- /dev/null
++++ b/3-JavaScript/js-08/index.html
+@@ -0,0 +1,15 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta http-equiv="X-UA-Compatible" content="IE=edge">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Tipo</title>
++</head>
++<body>
++    
++    <script src="assets/js/clases.js">
++
++    </script>
++</body>
++</html>
+\ No newline at end of file
+-- 
+2.37.1.windows.1
+
