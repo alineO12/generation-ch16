@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class OperadoresAritmeticos {
+    public static void main(String[] args) {
+
+     int i = 5, j = 4;
+       int suma = i + j; //Declaramos variables
+
+       System.out.println("suma = " + suma);
+
+        System.out.println("i + j = " + (i + j)); //En este caso efectua la operación de suma
+        System.out.println("i + j = " + i + j); //Aquí concatena
+
+        int resta = i - j; //Operador resta
+        System.out.println("resta = " + resta);
+        System.out.println("i -j = " + (i - j));
+
+        int multi = i * j; //Operador multiplicación
+        System.out.println("multi = " + multi); //concatena la palabra
+        System.out.println("i * j = " + (i * j)); //imprime i*j + el resultado de la operación
+
+        int div = i / j;
+        System.out.println("div = " + div);
+        float div1 = (float) i / (float) j;
+        System.out.println("div1 = " + div1);
+
+        int resto = i % j;
+        System.out.println("resto = " + resto);
+        resto = 8 % 5;
+        System.out.println("resto = " + resto);
+
+        Scanner scanner = new Scanner(System.in); //in hace referencia que ahora se espera una entrada
+        System.out.println("¿cual es tu nombre?");
+        String nombre = scanner.next(); //aqui se pide que ingrese el dato de nombre
+        System.out.println("Hola " + nombre);
+        System.out.println("¿Cual es tu edad?");
+        String edadString = scanner.next(); //aqui se pide que ingrese el dato de edad
+        int edad = Integer.parseInt(edadString); //cambiamos edad de string a entero
+        System.out.println("tienes " + edad);
+
+
+
+    }
+}
