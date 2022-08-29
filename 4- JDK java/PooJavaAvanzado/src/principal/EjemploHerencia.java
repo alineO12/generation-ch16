@@ -10,12 +10,15 @@ public class EjemploHerencia {
         h.visualizarA();
 
         Hijo ho = new Hijo();
+        ho.setA(14689);
         ho.visualizarABC();
 
-        BasePadre obj = new BasePadre();
-        obj.setA(2357);
+        BasePadre objB = new BasePadre();
+        objB.setA(2357);
+        Object miObj = new BasePadre();
 
-        System.out.println("Atributo de Clase Base Padre que hereda a hija y declaramos directamente en main"+h.getA());
+        System.out.println("Atributo de Clase Base Padre que hereda a hijo y declaramos directamente en main"+objB.getA());
+        System.out.println("Atributo de Clase Hijo"+ho.getA());
 
 
     }
