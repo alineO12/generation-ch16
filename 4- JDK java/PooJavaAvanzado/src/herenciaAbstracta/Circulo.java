@@ -8,10 +8,10 @@ public class Circulo extends figurasGeometricas{
         return (float) (Math.PI * Math.pow(radio, 2));
     }
 
-    public Circulo() {
-    }
 
+    //Aquí agregamos función super y le paso el nombre de la clase que se trata, en este caso, círculo
     public Circulo(float radio) {
+        super("Circulo");
         this.radio = radio;
     }
 
